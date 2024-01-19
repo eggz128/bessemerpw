@@ -71,12 +71,12 @@ test.describe('Sub suite 2', async () => {
 
   test.describe('Sub sub test suite', async () => {
 
-    test.only('iFrame recorded', async ({ page }) => {
+    test('iFrame recorded', async ({ page }) => {
       await page.goto('https://www.independent.co.uk/');
       await page.frameLocator('iframe[title="SP Consent Message"]').getByLabel('AGREE').click();
     });
 
-    test.only('all products', async ({ page }) => {
+    test('all products', async ({ page }) => {
       await page.goto('https://www.edgewordstraining.co.uk/demo-site/');
       const newProducts = await page.getByLabel('Recent Products');
       for (const prod of await newProducts.locator('h2:not(.section-title)').all()) {
