@@ -1,0 +1,28 @@
+<!doctype html>
+
+	
+		<title>My first web page</title>
+		<style>
+		p {color: red;}
+		div > p {color: green}
+		p#first {color: blue}
+		.bordered {border: 1px solid black}
+		[data-testid=hereiam] {font-style: italic;
+		font-size: 20px;}
+		</style>
+	
+		<h1 class=bordered>Hello world</h1>
+		<p id=first>This is a paragraph</p>
+		<p class=bordered>This is another para
+		<div>
+		<p data-testid=hereiam>This too
+		</div>
+		<input />
+		<a title="whatever" aria-role=button href="http://google.com/">Click me</a>
+		<div>
+			<p>Should be green
+			<section>
+				<p class=bordered>This is another para
+				<p>This too
+			</section>
+		</div>
